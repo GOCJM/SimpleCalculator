@@ -1,0 +1,117 @@
+#title {
+    color: crimson;
+    font-family: Baskerville, Arial, Helvetica;
+    font-size: 10vh;
+    text-shadow: black 2px 2px;
+}
+
+aside {
+    width: 31.5%;
+    padding-left: 15px;
+    padding-top: 2em;
+    margin-left: 15px;
+    float: right;
+}
+
+table {
+    width: 60%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+}
+
+.collapsible {
+    background-color: #ec4d4d;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #aa3838;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    font-size: 3vh;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.indent {
+    text-indent: 1vw;
+}
+.indent2 {
+    text-indent: 2vw;
+}
+
+#headerOutput{
+    display: inline-block;
+    width: 65vw;
+    font-family: Segment7Standard, Arial;
+    font-size: 7vh;
+    background-color: gray;
+    border-radius: 0.5em;
+    padding-left: 0.3em;
+}
+div.output h1 {
+    padding-left: 0.3em;
+}
+div.keypad {
+    padding: 5px 10px 5px
+}
+div.keypadBR {
+    margin-left: 30.6vw;
+    padding: 5px 10px 5px
+}
+button {
+    width: 15vw;
+    font-size: 3vh;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#content-wrap {
+    padding-bottom: 20rem;    /* Footer height */
+}
+
+#footer {
+    position: absolute;
+    height: 2.5rem;            /* Footer height */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
